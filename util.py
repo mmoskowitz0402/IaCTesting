@@ -54,7 +54,7 @@ class Util:
             for dirname in dirnames:
                 if dirname == "tests":
                     test_path = os.path.join(dirpath, dirname)
-                    
+                    print("Test change") 
                     for (testdirpath, testdirnames, testfilenames) in os.walk(test_path):
                         for testfile in testfilenames:
                             self.__write_to_arr(os.path.normpath(os.path.join(test_path,testdirpath, testfile)))
